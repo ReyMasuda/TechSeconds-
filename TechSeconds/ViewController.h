@@ -8,8 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    IBOutlet UILabel *countLabel; //ラベル宣言
+    IBOutlet UILabel *perfectLabel;
+    
+    float count; //今回は少数！！
+    
+    NSTimer *timer;
+}
 
+-(IBAction)start; //startメソッド
+-(IBAction)stop; //stopメソッド
+-(IBAction)clear; //clearメソッド
+
+- (void)up; //返り値も引数もないメソッド
 
 @end
 
